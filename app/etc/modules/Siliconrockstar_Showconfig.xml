@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+       <Siliconrockstar_Showconfig>
+            <version>0.1.0</version>
+            <codePool>local</codePool>
+            <active>true</active>
+        </Siliconrockstar_Showconfig>
+    </modules>
+</config>

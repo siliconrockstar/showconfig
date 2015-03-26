@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Siliconrockstar_Showconfig>
+      <version>0.1.0</version>
+    </Siliconrockstar_Showconfig>
+  </modules>
+  <global>
+    <helpers>
+      <showconfig>
+        <class>Siliconrockstar_Showconfig_Helper</class>
+      </showconfig>
+    </helpers>
+	<models>
+	  <showconfig>
+		<class>Siliconrockstar_Showconfig_Model</class>
+		<resourceModel>showconfig_mysql4</resourceModel>
+	  </showconfig>
+	</models>
+    <events>
+	  <controller_front_send_response_before> <!-- identifier of the event we want to catch -->
+        <observers>
+          <controller_front_send_response_before_handler> <!-- identifier of the event handler -->
+            <type>model</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>showconfig/observer</class> <!-- observers class alias -->
+            <method>sendConfig</method>  <!-- observer's method to be called -->
+            <args></args> <!-- additional arguments passed to observer -->
+          </controller_front_send_response_before_handler>
+        </observers>
+      </controller_front_send_response_before>
+    </events>
+  </global>
+</config> 
