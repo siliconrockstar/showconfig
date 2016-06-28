@@ -2,9 +2,7 @@
 Tiny Magento module that will dump the global config object if you 
 append the GET parameter ?showConfig=1 to the URL
 
-Note: Please don't use this on production systems, it doesn't
-expose any passwords but it does make your installation
-easier to scan for potentially vulnerable modules.
+DO NOT USE ON PRODUCTION SYSTEMS, IT EXPOSES YOUR DATABASE PASSWORD, as well as a lot of other info.
 
 Example usage:
 
